@@ -210,7 +210,7 @@ body {
 }
 
 .main-header {
-   padding-top: 0;
+   padding-top: 0px;
    text-align: center;
    background-image: linear-gradient(to bottom, var(--background-image-gradient), var(--background-image-gradient)), url(../images/background-image.jpg);
    background-position: center;
@@ -219,9 +219,12 @@ body {
 }
 
 .main-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px 226px 140px;
-   
+    padding: 200px 226px 140px;
 }
 
 .caption {
@@ -585,6 +588,7 @@ body {
     top: 50%;
     left: 50%;
     width: 528px;
+    padding: 40px;
     min-height: 581px;
     background-color: var(--white);
     box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -645,4 +649,191 @@ body {
   .projects-photo-overlay {
     transform: translateY(0);
     transition: transform 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form {
+    margin-left: 78px;
+}
+
+.newsletter-form-item {
+    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.12;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.newsletter-input {
+    color: var(--dark-white);
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid #ffffff4d;
+    border-radius: 4px;
+    background-color: var(--dark-background);
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signup-button {
+    width: 200px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding-left: 42px;
+    cursor: pointer;
+}
+
+.modal-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--almost-black);
+    padding-bottom: 12px;
+}
+
+.modal-form-label .modal-form-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.modal-form-label:hover .modal-form-icon {
+    fill: var(--blue);
+}
+
+.modal-form-label {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: var(--grey);
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 27px;
+    left: 13px;
+}
+
+.label-name {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.modal-form-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding-left: 40px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:hover,
+.modal-form-input:active,
+.modal-form-input:focus {
+    border: 1px solid var(--blue);
+    outline: none;
+}
+
+.modal-form-textarea {
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    font-size: 12px;
+    color: #75757580;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.checkbox-input {
+    opacity: 0;
+}
+
+.accepted {
+    fill: var(--white);
+    background-color: var(--blue);
+    border-radius: 2px;
+    position: absolute;
+    transform: translate(-125%, 25%);
+    z-index: 1;
+    opacity: 0;
+}
+
+.checkbox-input:checked + .accepted {
+    opacity: 1;
+}
+
+.not-accepted {
+    position: absolute;
+    transform: translate(-125%, 25%);
+}
+
+.checkbox-item {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+}
+
+.checkbox-item span {
+    margin-left: 7px;
+}
+
+.checkbox-container label a {
+    color: var(--blue);
+}
+
+.modal-link {
+    color: var(--blue);
+}
+
+.modal-form-button {
+    padding: 10px 76px;
+    margin: 30px 120px;
+    background-color: var(--blue);
+    box-shadow: 0px 4px 4px #00000026;
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    border: none;
+    cursor: pointer;
 }

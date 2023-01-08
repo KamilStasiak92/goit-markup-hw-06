@@ -51,13 +51,66 @@
       </div>
     </header>
     <main>
-      <section class="content main-header">
+      <section class="main-header">
         <div class="container main-item">
           <h1 class="caption">Efektywne rozwiązania dla waszego biznesu</h1>
           <button class="service" type="button" data-modal-open>Zamów usługę</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-btn-close" data-modal-close>&times;</button>
+              <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
+              <form name="contact-form" class="modal-form">
+                <label class="modal-form-label">
+                  <svg class="modal-form-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                  </svg>
+                  <span class="label-name">Imię</span>
+                  <input type="text" name="contact-name" class="modal-form-input" />
+                </label>
+                <label class="modal-form-label">
+                  <svg class="modal-form-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                  </svg>
+                  <span class="label-name">Telefon</span>
+                  <input type="tel" name="contact-phone" class="modal-form-input" />
+                </label>
+                <label class="modal-form-label">
+                  <svg class="modal-form-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                  </svg>
+                  <span class="label-name">Email</span>
+                  <input type="email" name="contact-email" class="modal-form-input" />
+                </label>
+                <label class="modal-form-label">
+                  <span class="label-name">Komentarz</span>
+                  <textarea
+                    name="contact-coment"
+                    placeholder="Wprowadź tekst"
+                    class="modal-form-input modal-form-textarea"
+                  ></textarea>
+                </label>
+                <div class="checkbox">
+                  <label class="checkbox-item">
+                    <input
+                      class="checkbox-input"
+                      type="checkbox"
+                      name="regulations-and-privacy-policy"
+                      value="accepted"
+                    />
+                    <svg class="accepted" width="16px" height="15px">
+                      <use href="./images/icons.svg#icon-icon-check"></use>
+                    </svg>
+                    <svg class="not-accepted" width="16px" height="15px">
+                      <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                    <span
+                      >Oświadczam, iż akceptuję <a href="#">Regulamin</a> i
+                      <a href="#">Politykę Prywatności</a>.</span
+                    ></label
+                  >
+                </div>
+                <button type="submit" class="modal-form-button">Wyślij</button>
+              </form>
             </div>
           </div>
         </div>
@@ -566,6 +619,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-form">
+          <p class="newsletter-form-item">Zapisz się do newslettera</p>
+          <form name="newsletter-form" class="newsletter-form">
+            <label>
+              <input
+                class="newsletter-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="signup-button" type="submit">
+              <span>Zapisz się</span>
+              <svg class="newsletter-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
