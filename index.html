@@ -65,21 +65,27 @@
                     <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                   </svg>
                   <span class="label-name">Imię</span>
-                  <input type="text" name="contact-name" class="modal-form-input" />
+                  <input type="text" name="contact-name" class="modal-form-input" required />
                 </label>
                 <label class="modal-form-label">
                   <svg class="modal-form-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                   </svg>
                   <span class="label-name">Telefon</span>
-                  <input type="tel" name="contact-phone" class="modal-form-input" />
+                  <input
+                    type="tel"
+                    name="contact-phone"
+                    class="modal-form-input"
+                    required
+                    pattern="[0-9]{9}"
+                  />
                 </label>
                 <label class="modal-form-label">
                   <svg class="modal-form-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                   </svg>
                   <span class="label-name">Email</span>
-                  <input type="email" name="contact-email" class="modal-form-input" />
+                  <input type="email" name="contact-email" class="modal-form-input" required />
                 </label>
                 <label class="modal-form-label">
                   <span class="label-name">Komentarz</span>
@@ -96,6 +102,7 @@
                       type="checkbox"
                       name="regulations-and-privacy-policy"
                       value="accepted"
+                      required
                     />
                     <svg class="accepted" width="16px" height="15px">
                       <use href="./images/icons.svg#icon-icon-check"></use>

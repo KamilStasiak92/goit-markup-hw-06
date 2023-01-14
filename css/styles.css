@@ -766,6 +766,10 @@ body {
     outline: none;
 }
 
+.modal-form-label:has(.modal-form-input:focus) .modal-form-icon { 
+    fill: var(--blue); 
+}
+
 .modal-form-textarea {
     height: 120px;
     resize: none;
